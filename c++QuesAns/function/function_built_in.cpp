@@ -20,6 +20,8 @@ int main(int argc, char const *argv[])
 	cout<<cos(sqrt(2))<<endl;
 	userdefine();
 	cout<<user();
+	cout<<endl;
+	cout<<exp(4);
 
 
 	return 0;
