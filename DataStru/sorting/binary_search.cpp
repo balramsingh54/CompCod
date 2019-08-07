@@ -5,6 +5,7 @@ int binary_search(int arr[], int s, int e, int value)
 {
 	int ans;
 	int mid=(s+e)/2;
+	while(s<=e){
 	if (arr[mid]==value)
 	{
 		return mid;
@@ -21,6 +22,7 @@ int binary_search(int arr[], int s, int e, int value)
 		ans=binary_search(arr, s, e, value);
 		return ans;
 	}
+}
 }
 
 int main(int argc, char const *argv[])
