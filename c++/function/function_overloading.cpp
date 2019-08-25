@@ -22,6 +22,5 @@ int main(int argc, char const *argv[])
 	display(a);
 	display(b);
 	display(d);
-
 	return 0;
 }
