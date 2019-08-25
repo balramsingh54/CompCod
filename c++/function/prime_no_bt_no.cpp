@@ -8,10 +8,10 @@ int CheckPrimeNo(int n)
 	{
 		if (n%i==0)
 		{
-			flag=1;
+			flag=0;
 			break;
 		}
-		if (flag==0)
+		if (flag==1)
 		{
 			return n;
 		}
