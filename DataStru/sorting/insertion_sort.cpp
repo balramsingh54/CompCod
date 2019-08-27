@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
 void printArray(int array[], int size){ 
   for(int i=0; i < size; i++){
@@ -17,6 +17,7 @@ void insertionSort(int array[], int size){
   }
   array[j+1]=key;
   }
+  cout<<"*****";
 }
 int main(){
   int data[] = {9, 5, 1, 4, 3};

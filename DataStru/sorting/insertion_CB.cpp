@@ -19,21 +19,17 @@ void display(int arr[],int size){
 int main(){
 
 	int arr[] = {5,3,2,1,4};
-
-	int counter = 1;
-	while(counter<5){
-		for(int i=counter;i>0;i--){
-			if(arr[i-1]>arr[i]){
-				swap(arr,i-1,i);
-			}else{
-				break;
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 5; j < 0; j--)
+		{
+			if (arr[j]>arr[j-1])
+			{
+				swap(arr, j, j-1);
 			}
 		}
-
-		counter++;
 	}
 
-	cout<<(sizeof(arr)/sizeof(int))<<endl;
 
 	return 0;
 }

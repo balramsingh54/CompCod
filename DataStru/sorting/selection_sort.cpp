@@ -17,7 +17,7 @@ void display(int arr[],int size){
 }
 
 int main(){
-	int arr[] = {5,4,3,2,1};
+	int arr[] = {5,4,3,8,1};
 
 	// cout<<(sizeof(arr)/sizeof(int))<<endl;
 
