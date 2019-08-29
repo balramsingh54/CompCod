@@ -56,11 +56,21 @@ void delete_at_head(node* &head)
 	delete temp;
 }
 
-void delete_at_tail(node* &head)
-{
-	node* cur_node= head;
-	node* pre_node= NULL;
+
+
+void deleteAtTail(node*head){
+	node* prev = NULL;
+	node* temp = head;
+
+	while(temp->next!=NULL){
+		prev = temp;
+		temp = temp->next;
+	}
+
+	delete temp;
+	prev->next = NULL;
 }
+
 void display(node* head)
 {
 	node* temp=head;
@@ -83,6 +93,7 @@ int main(int argc, char const *argv[])
 	insert_At_Head(head, 1);
 	insertAtTail(head, 6);
 	delete_at_head(head);
+	deleteAtTail(head);
 	display(head);
 	cout<<length(head);
 
