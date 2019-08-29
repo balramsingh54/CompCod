@@ -58,13 +58,26 @@ void delete_at_head(node* &head)
 
 void insert_At_position(node*&head, int data, int pos)
 {
-	int count=0;
+	
 	if (head==NULL or pos==1 or pos==0)
 	{
 		insert_At_Head(head, data);
 	}
-	while()
 
+	if (pos>length(head))
+	{
+		insertAtTail(head, data);
+	}
+
+	int count=1;
+	while(count<(pos-1))
+	{
+		head=head->next;
+		count++;
+	}
+	node* n= new node (data);
+	n->next= head->next;
+	head->next=n; 
 
 }
 
@@ -102,8 +115,11 @@ int main(int argc, char const *argv[])
 	insert_At_Head(head, 2);
 	insert_At_Head(head, 1);
 	insertAtTail(head, 6);
-	delete_at_head(head);
-	deleteAtTail(head);
+	// delete_at_head(head);
+	// deleteAtTail(head);
+	insert_At_position(head, 444, 3);
+	insert_At_position(head, 555, 3);
+	insert_At_position(head, 666, 4);
 	display(head);
 	cout<<length(head);
 
