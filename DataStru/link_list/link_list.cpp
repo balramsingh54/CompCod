@@ -56,7 +56,17 @@ void delete_at_head(node* &head)
 	delete temp;
 }
 
+void insert_At_position(node*&head, int data, int pos)
+{
+	int count=0;
+	if (head==NULL or pos==1 or pos==0)
+	{
+		insert_At_Head(head, data);
+	}
+	while()
 
+
+}
 
 void deleteAtTail(node*head){
 	node* prev = NULL;
