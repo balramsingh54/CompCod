@@ -31,6 +31,11 @@ bool isPalindrome()
 	return true;
 }
 
+char maxCharacter()
+{
+	
+}
+
 int main(int argc, char const *argv[])
 {
 
