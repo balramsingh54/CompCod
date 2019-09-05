@@ -17,7 +17,7 @@ public:
 	{
 		if (top==N)
 		{
-			cout<<"Stack is full";
+			cout<<"Stack is full"<<endl;
 			return;
 		}
 		else
@@ -25,7 +25,21 @@ public:
 			arr[top]=data;
 			top++;
 		}
+
 	}
+	void pop()
+	{
+		if (top==0)
+		{
+			cout<<"stack is empty ";
+			return;
+		}
+		cout<<"deleted element is "<<arr[N]<<endl;
+
+		top--;
+		cout<<arr[N-1];
+	}
+
 };
 
 int main(int argc, char const *argv[])
@@ -37,6 +51,8 @@ int main(int argc, char const *argv[])
 	s1.push(400);
 	s1.push(500);
 	s1.push(600);
+	s1.pop();
+	s1.pop();
 
 	return 0;
 }
