@@ -17,20 +17,22 @@ public:
 		top=0;
 	}
 
-	void isfull()
+	bool isfull()
 	{
 		if (top==N)
 		{
-			cout<<"stack is full... "<<endl;
+			return true;
 		}
+		return false;
 	}
 
-	void isEmpty()
+	bool isEmpty()
 	{
 		if (top==0)
 		{
-			cout<<"stack is empty...";
+			return true;
 		}
+		return false;
 	}
 
 	void push(T data)
@@ -38,6 +40,7 @@ public:
 		if (!isfull())
 		{
 			arr[top]=data;
+			cout<<arr[top]<<endl;
 			top++;
 		}
 	}
@@ -55,9 +58,10 @@ int main(int argc, char const *argv[])
 {
 	stack <int> st1;
 	st1.isEmpty();
-
+	st1.push(500);
+	st1.push(400);
+	st1.push(300);
+	st1.push(200);
+	st1.push(100);
 	return 0;
 }
-
-
-
