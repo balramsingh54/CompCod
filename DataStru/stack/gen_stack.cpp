@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int const N=5;
+int const N=4;
 
 template< typename T>
 
@@ -49,7 +49,9 @@ public:
 	{
 		if (!isEmpty())
 		{
+			cout<<"deleted element is "<<arr[top]<<endl;
 			top--;
+			cout<<"top element is "<<arr[top]<<endl;
 		}
 	}
 };
@@ -63,5 +65,9 @@ int main(int argc, char const *argv[])
 	st1.push(300);
 	st1.push(200);
 	st1.push(100);
+	st1.push(50);
+	// st1.pop();
+	// st1.pop();
+	st1.isfull();
 	return 0;
 }
