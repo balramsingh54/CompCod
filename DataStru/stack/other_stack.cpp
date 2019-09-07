@@ -18,10 +18,11 @@ int main(int argc, char const *argv[])
 	cout<<st1.top()<<endl;
 	st1.push(500);
 	cout<<st1.top()<<endl;
+	int l= st1.size();
 
 	cout<<"---------------------------"<<endl;
 
-	for (int i = 1; i <6; ++i)
+	for (int i = 0; i <l; ++i)
 	{
 		int x=st1.top();
 		st2.push(x);
