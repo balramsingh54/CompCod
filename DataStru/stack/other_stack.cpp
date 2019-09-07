@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 
 	cout<<"---------------------------"<<endl;
 
-	for (int i = 1; i < st1.size()+2; ++i)
+	for (int i = 1; i <6; ++i)
 	{
 		int x=st1.top();
 		st2.push(x);
