@@ -38,6 +38,22 @@ public:
 		return false;
 	}
 
+	void push(T data)
+	{
+		if (isFull())
+		{
+			cout<<"Queue is full:"<<endl;
+			return;
+		}
+		else
+		{
+			rear=(rear+1)%max_size;
+			arr[rear]=data;
+			cur_size++;
+		}
+		
+	}
+
 };
 
 int main(int argc, char const *argv[])
@@ -46,6 +62,16 @@ int main(int argc, char const *argv[])
 
 	cout<<qu1.isEmpty()<<endl;
 	cout<<qu1.isFull()<<endl;
+	qu1.push(100);
+	qu1.push(200);
+	qu1.push(300);
+	qu1.push(400);
+	qu1.push(500);
+	qu1.push(600);
+	qu1.push(700);
+	qu1.push(800);
+	cout<<qu1.isFull()<<endl;
+	//cout<<arr[cur_size-1];
 
 	return 0;
 }
