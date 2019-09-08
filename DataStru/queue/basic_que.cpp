@@ -54,30 +54,30 @@ public:
 		
 	}
 
+	T getFront()
+	{
+		return arr[front];
+	}
+
 };
 
 int main(int argc, char const *argv[])
 {
 	Queue <int>qu1;
 
-	cout<<qu1.isEmpty()<<endl;
-	cout<<qu1.isFull()<<endl;
+	// cout<<qu1.isEmpty()<<endl;
+	// cout<<qu1.isFull()<<endl;
 	qu1.push(100);
 	qu1.push(200);
-	qu1.push(300);
-	qu1.push(400);
-	qu1.push(500);
-	qu1.push(600);
-	qu1.push(700);
-	qu1.push(800);
-	cout<<qu1.isFull()<<endl;
-	//cout<<arr[cur_size-1];
+	// qu1.push(300);
+	// qu1.push(400);
+	// qu1.push(500);
+	// qu1.push(600);
+	// qu1.push(700);
+	// qu1.push(800);
+	// cout<<qu1.isFull()<<endl;
+	cout<<qu1.getFront()<<endl;
 
 	return 0;
 }
-
-
-
-
-
 
