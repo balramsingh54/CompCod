@@ -22,7 +22,16 @@ public:
 
 	bool isEmpty()
 	{
-		if (front == rear)
+		if (cur_size == 0)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	bool isFull()
+	{
+		if (cur_size==max_size)
 		{
 			return true;
 		}
@@ -36,7 +45,7 @@ int main(int argc, char const *argv[])
 	Queue <int>qu1;
 
 	cout<<qu1.isEmpty()<<endl;
-
+	cout<<qu1.isFull()<<endl;
 
 	return 0;
 }
