@@ -22,6 +22,15 @@ public:
  			l[u].push_back(v);
  		}
 	}
+
+	void display()
+	{
+		for (int i = 0; i < V; i++)
+		{
+
+			
+		}
+	}
 };
 
 int main(int argc, char const *argv[])
