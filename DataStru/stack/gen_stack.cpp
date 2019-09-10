@@ -1,3 +1,7 @@
+// for (std::vector<>::iterator i = .begin(); i != .end(); ++i)
+// {
+	
+// }
 #include <iostream>
 using namespace std;
 
