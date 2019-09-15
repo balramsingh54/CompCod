@@ -33,6 +33,19 @@ node* buildTree()
 
 }
 
+void displayPrOrder(node* root)
+
+{
+	if (root==NULL)
+	{
+		return ;
+	}
+
+	cout<<root->data<<" ";
+	displayPrOrder(root->left);
+	displayPrOrder(root->right);
+}
+
 void print(node* root)
 {
 	if (root==NULL)
@@ -47,6 +60,8 @@ void print(node* root)
 int main(int argc, char const *argv[])
 {
 	node* root=buildTree();
-	print(root);
+
+	displayPrOrder(root);
+	//print(root);
 	return 0;
 }
