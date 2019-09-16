@@ -69,6 +69,19 @@ void print(node* root)
 	print(root->right);
 }
 
+
+void displayPoOrder(node* root)
+{
+	if (root==NULL)
+	{
+		return;
+	}
+
+	displayPoOrder(root->left);
+	displayPoOrder(root->right);
+	cout<<root->data<<" ";
+}
+
 int main(int argc, char const *argv[])
 {
 	node* root=buildTree();
@@ -78,5 +91,8 @@ int main(int argc, char const *argv[])
 	cout<<endl;
 	displayInOrder(root);
 
+	cout<<endl;
+
+	displayPoOrder(root);
 	return 0;
 }
