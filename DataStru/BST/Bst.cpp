@@ -46,6 +46,18 @@ void displayPrOrder(node* root)
 	displayPrOrder(root->right);
 }
 
+void displayInOrder(node* root)
+
+{
+	if (root==NULL)
+	{
+		return ;
+	}
+
+	displayInOrder(root->left);
+	cout<<root->data<<" ";
+	displayInOrder(root->right);
+}
 void print(node* root)
 {
 	if (root==NULL)
@@ -63,5 +75,8 @@ int main(int argc, char const *argv[])
 
 	displayPrOrder(root);
 	//print(root);
+	cout<<endl;
+	displayInOrder(root);
+
 	return 0;
 }
