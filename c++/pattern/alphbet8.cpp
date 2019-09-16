@@ -5,15 +5,19 @@ int main(int argc, char const *argv[])
 {
 	int n;
 	cin>>n;
-	int temp=65;
+
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = n; j > i; j--)
+		for (int j = n; j > i+1; j--)
 		{
-			cnsout<<char(temp+i)<<" ";
+			cout<<" "<<" ";
 		}
+		for (int k = 0; k < i+1; k++)
+		{
+			cout<<i+1<<" ";
+		}
+
 		cout<<endl;
 	}
-
 	return 0;
 }
