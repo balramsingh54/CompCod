@@ -8,16 +8,17 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = n; j > i+1; j--)
+		for (int j = 0; j <= n-i-2; j++)
 		{
-			cout<<" ";
-		}
-		for (int k = 0; k < i+1; k++)
-		{
-			cout<<"*"<<" ";
+			cout<<"  ";
 		}
 
+		for (int k = 0; k < i+1; k++)
+		{
+			cout<<"* "<<"  ";
+		}
 		cout<<endl;
 	}
+
 	return 0;
 }
