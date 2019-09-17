@@ -22,11 +22,6 @@ int main(int argc, char const *argv[])
 			cout<<"*"<<" ";
 		}
 
-		for (int m = 0; i < count; ++i)
-		{
-			/* code */
-		}
-
 		cout<<endl;
 	}
 	return 0;
