@@ -12,6 +12,7 @@ int main(int argc, char const *argv[])
 		freq[ch]++;		
 	}
 int max = INT_MIN;
+
 	for (int i = 0; i < 256; i++)
 	 {
 	 	if (max<freq[i])
