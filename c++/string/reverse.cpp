@@ -10,9 +10,17 @@ int main(int argc, char const *argv[])
 	int brr[5]={0};
 	while(s<=e)
 	{
-		
+		temp=arr[s];
+		arr[s]=arr[e];
+		arr[e]=temp;
+		s++;
+		e--;
 	}
 
+	for (int i = 0; i < 5; i++)
+	{
+		cout<<arr[i]<<" ";
+	}
 
 	return 0;
 }
