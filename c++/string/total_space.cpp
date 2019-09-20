@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int totao_space(string str)
@@ -19,10 +20,10 @@ int totao_space(string str)
 
 int main(int argc, char const *argv[])
 {
-	char str[100]={0};
-	cin.getline(str, 100);
+	string str;
+	getline(cin, str);
 
-
+	cout<<totao_space(str);
 	
 	return 0;
 }
