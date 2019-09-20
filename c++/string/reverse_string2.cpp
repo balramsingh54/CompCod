@@ -6,6 +6,7 @@ void reverse_string(string str)
 	int temp;
 	int s=0;
 	int e=str.length()-1;
+	int arr[str.length()];
 	while(s<=e)
 	{
 		temp=str[s];
@@ -17,7 +18,9 @@ void reverse_string(string str)
 
 	for (int i = 0; i < str.length(); i++)
 	{
-		cout<<str[i]<<" ";
+		arr[i]=str[i];
+		cout<<str[i];
+
 	}
 }
 
