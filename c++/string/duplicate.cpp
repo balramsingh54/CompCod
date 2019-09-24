@@ -15,9 +15,8 @@ void remove_duplicate(string str)
 			if (str[i]!=arr[j])
 			{
 				arr[j]=str[i];
-			}
-			else
 				break;
+			}
 		}
 	}
 	for (int i = 0; i < str.length(); i++)
