@@ -1,15 +1,28 @@
 #include <iostream>
+#include <climits>
+
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
-	int a, b;
-	cin>>a>>b;
-	int* x=&a;
-	int* y=&b;
-	int z= *x + *y;
+void display(int arr[],int size){
+	for(int i=0;i<size;i++){
+		cout<<arr[i]<<" ";
+	}
+	cout<<endl;
+}
 
-	cout<<"sum is "<<z;;
+int main(){
+	
+	int arr[] = {1,2,3,56,5};
 
-	return 0;
+	display(arr,5);
+
+	int max = INT_MIN;
+
+	for(int i=0;i<5;i++){
+		if(max<arr[i]){
+			max = arr[i];
+		}
+	}
+
+	cout<<"Max value is "<<max<<endl;
 }
