@@ -19,6 +19,14 @@ public:
 
 };
 
+class hash_table
+{
+	
+	
+};
+
+
+
 int main(int argc, char const *argv[])
 {
 	
